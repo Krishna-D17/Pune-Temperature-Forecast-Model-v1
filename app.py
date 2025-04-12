@@ -4,6 +4,7 @@ import numpy as np
 import joblib
 from sklearn.base import BaseEstimator, TransformerMixin
 
+
 #####################################################
 # 1. Define the same FeatureEngineer class used in the pipeline
 #####################################################
@@ -17,7 +18,7 @@ app = Flask(__name__)
 #####################################################
 # 3. Load the trained pipeline (with the same FeatureEngineer defined)
 #####################################################
-model_pipeline = joblib.load("model_pipeline.pkl")
+model_pipeline = joblib.load("model_pipeline_fixed.pkl")
 
 #####################################################
 # 4. Routes
